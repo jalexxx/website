@@ -1,0 +1,581 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	width: 100%;
+}
+/* change the background colour 1. home page/ more page could ust be basic stars and so forth 2. experiene, skill 3. projetcs / animations./coding/ photoraphy etc - do an aniamted background*/
+.image
+{
+	margin: 10px auto 10px;
+	display: block;
+	max-width: 50%;
+	height: auto;
+
+}
+
+/* image for the front page of the websiet */
+.front-cover
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url(imgs/bg.jpg);
+	background-size: cover;
+	
+}
+
+section div
+{
+	max-width: 800px;
+	font-family: cursive;
+}
+
+/* read more button, on about page that links to the more page */ 
+.button 
+{
+	background-color: transparent;
+	border: none;
+	color: chartreuse;
+	padding: 0;
+	text-align: center;
+	text-decoration: underline;
+	display: inline-block;
+	font-size: 100px;
+	margin: 4px 2px;
+	cursor: pointer;
+	
+}
+
+header 
+{
+	background: transparent;
+	padding: 5px;
+	position: flex;
+	left: 0;
+	right: 0;
+	height: 65px ;
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+header * {
+	display: inline;
+}
+
+
+	
+/* for the nav-bar menu - ensures it's responsive */
+
+header nav 
+{
+	margin: 100px;
+	padding: 100px;
+
+}
+
+.bodydiv 
+{
+	position: relative;
+	width: 75%;
+	height: auto;
+	text-align: center;
+	margin: 100px;
+	padding: 100px;
+	height: auto;
+	background: linear-gradient(0deg, #000, #262626);
+
+}
+.bodydiv:before  
+{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094, #0000ff,#00ff00,#ffff00,#ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: animate 20s linear infinite;
+}
+
+@keyframes animate 
+{	
+	0%
+	{
+		background-position:  0 0;
+	}
+	50%
+	{
+		background-position:  400% 0;
+	}
+	100%
+	{
+		background-position:  0 0;
+	}
+}
+nav ul 
+{
+	padding: 0;
+	display: flex;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+header nav ul li 
+{
+	list-style: none;
+	position: relative;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin: 80px;
+	
+}
+
+span.menu-toggle {
+    display: none;
+  }
+}
+/* for the dropdown effect */ 
+
+header nav ul li.sub-menu 
+{
+	position: flex;
+	font-family:cursive;
+	line-height: 100px;
+}
+
+header nav ul li.active.sub-menu:before 
+{
+	position: flex;
+	line-height: 75px;
+	font-family: cursive;
+}
+
+header nav ul li ul
+{
+	position: absolute;
+	left: 0;
+	background-color: aqua;
+	display: none;
+	
+}
+
+/* hover function for nav bar */
+
+header nav ul li:hover ul
+{
+	display: block;
+	
+}
+
+
+header nav ul li ul li
+{
+	display:contents;
+	width: 150px;
+}
+
+header nav ul li a
+{	
+	height: 75px;
+	line-height: 75px;
+	padding: 0px 20px;
+	color: white;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	
+}
+/* colour when hover over the nav */
+
+header nav ul li a:hover,
+header nav ul li a:active
+{
+	color: #fff;
+	background-color: aquamarine;		
+}
+.imageone {
+	
+	float: left;
+	margin-top: 55px;
+	width: 500px;
+	height: 720px;
+	margin: 63px;
+	background-image: url(imgs/person.jpg);
+	background-size: cover;
+}
+
+
+h1
+{
+	margin: 0;
+	padding-left: 100px;
+	color: white;
+}
+
+p
+{	
+	font-size: 40px;
+	text-align: justify;
+	font-size: 40px;
+	color: white;
+}
+
+p2
+{	
+	font-size: 40px;
+	text-align: justify;
+	color: white;
+	text-align: center; 
+}
+p3
+{
+	font-size: 30px;
+	text-align: justify;
+	color: white;
+	text-align: center; 
+}
+}
+
+/* image in about me */
+
+
+.container
+{
+	min-height: 10vh;
+	display: flex;
+	justify-content:flex-end;
+	align-content: center;
+}
+
+.container a 
+{
+	position: relative;
+	width: 300px;
+	height: 75px;
+	margin: 10px 0;
+	font-size: 20px;
+	color: #fff;
+	display: inline-flex; 
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+
+.container a:hover
+{
+	color: darkblue;
+}
+
+.container a:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: url(btn-bg1.png);
+	background-size: cover;
+	transform-origin: left;
+	transition: 0.5s;
+	
+}
+
+.container a:hover:before
+{
+	width: 100%;
+}
+
+.container a span
+{
+	position: relative;
+	z-index: 1;
+}
+
+/*.secondbodydiv{	
+	background-color: antiquewhite;
+	text-align: center;
+	margin: 50px;
+	padding: 100px;
+	height: 2000px ;	
+} */
+
+/* accordion info for the more page */
+.accordion
+{
+	max-width: 100%;
+	height: auto;
+
+}
+
+.accordion .contentA
+{
+	position:relative; 
+	margin: 10px 200px;
+}
+
+.accordion .contentA .label
+{
+	position: relative;
+	padding: 20px;
+	background: white;
+	color:black;
+	cursor: pointer;
+}
+
+.accordion .contentA .label::before
+{
+	content: '+';
+	position: absolute;
+	top: 30%;
+	right: 40px;
+	transform: translateY(-50%);
+	font-size: 1.5em;
+}
+
+.accordion .contentA.active .label::before
+{
+	content: '-';
+}
+
+.accordion .contentA .content
+{
+	position: relative;
+	background: purple;
+	height: 0;
+	overflow: hidden;
+	transition: 0.5s;
+	overflow-y: auto;
+}
+
+
+.accordion .contentA.active .content
+{
+	height: 350px;
+	padding: 10px
+}
+
+/* for the form */
+
+/* for the contact page */
+.contact
+{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-size: cover;	
+	margin: 50px;
+}
+
+.contact .position-div
+{
+	width: 900px;
+	height: 100%;
+	position: absolute;
+	top: 20%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.contact .content{
+	max-width: 800px;
+	text-align: center;
+}
+
+.contact .content h1{
+	font-size: 38px;
+	color:white;
+}
+
+.contact .content p{
+	font-size: 30px;
+	color: white;
+}
+
+.containerA{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+
+}
+
+.containerA .form-info
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.containerA .form-info .box
+{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+	right: 50px;
+}
+
+.containerA .form-info .box .icon
+{
+	min-width: 50px;
+	height: 50px;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius:40%;
+	border-top-left-radius: 90px;
+	font-size: 25px;
+	margin: 10px;
+	margin-top: 15px;
+}
+
+.containerA .form-info .box .text
+{
+	display: flex;
+	margin-left: 10px;
+	font-size: 20px;
+	color: white;
+	flex-direction: column;
+}
+
+
+.containerA .form-info .box .text h3
+{
+	font-size: 25px;
+	color: blue;
+}
+.containerA .form-info .box .text p2
+{
+	font-size: 25px;
+}
+
+.contact-form
+{
+	width: 900px;
+	padding: 40px;
+	background: white;
+}
+
+.contact-form .input-box
+{
+	position: relative;
+	width:100%;
+	margin-top: 30px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea
+{
+	width: 100%;
+	padding: 10px 0;
+	margin: 10px;
+	font-size: 16px;
+	border: none;
+	border-bottom: 2px solid #333; 
+	outline: none;
+	resize: none;
+}
+
+.contact-form .input-box span
+{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: darkkhaki;
+}
+
+/* allows the font to change and colour */
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box input:valid ~ span,
+.contact-form .input-box textarea:focus ~ span,
+.contact-form .input-box textarea:valid ~ span 
+{
+	color: black;
+	font-size: 12px;
+	transform: translate(-20px);
+}
+
+.contact-form .input-box input[type="submit"]
+{
+	background: pink;
+	border: none;
+	float: left;
+	width: 100px;
+	margin-left: 280px;
+	margin-top: 20px;
+		
+}
+	
+/* for other sizes oter than  default */
+
+.menu-toggle{
+	color: #fff;
+	float: left;
+	line-height: 65px;
+	font-size: 20px;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width: 800px)
+	
+	/* occurs when the the width is above */
+{
+	header
+	{
+		padding: 0 20px;
+	}
+	
+	.menu-toggle{
+		display: block;
+	}
+	
+	header nav{
+
+		position: absolute;
+		width: 100%;
+		height: auto;
+		background: black;
+		top: 250px;
+		left: 0;
+		transition: 0.5s;
+		
+	}
+	
+	 header nav.active{
+		
+		left:-100px;
+		
+	} 
+	
+	header nav ul {
+		display: block;
+		align-items: center;
+	}
+	
+		header nav ul li:active ul{
+		position: flex;
+		background: #8B008B; 
+	}
+}
